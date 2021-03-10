@@ -8,7 +8,7 @@ Title "Shield Attiny85"
 Date "2021-02-18"
 Rev "1.0"
 Comp "Franzininho"
-Comment1 ""
+Comment1 "Fábio"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -43,7 +43,7 @@ U 1 1 602F3A2A
 P 8350 2950
 F 0 "A1" H 8350 4131 50  0000 C CNN
 F 1 "Arduino_UNO_R3" H 8350 4040 50  0000 C CNN
-F 2 "Module:Arduino_UNO_R3" H 8350 2950 50  0001 C CIN
+F 2 "shield-attiny:Arduino_UNO_R3" H 8350 2950 50  0001 C CIN
 F 3 "https://www.arduino.cc/en/Main/arduinoBoardUno" H 8350 2950 50  0001 C CNN
 	1    8350 2950
 	1    0    0    -1  
@@ -125,17 +125,6 @@ Text GLabel 4050 3600 1    50   Input ~ 0
 D9
 Wire Wire Line
 	4050 3600 4050 3750
-$Comp
-L Device:LED_RGBC D1
-U 1 1 603047DD
-P 5850 2900
-F 0 "D1" H 5850 3397 50  0000 C CNN
-F 1 "LED_RGBC" H 5850 3306 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm-4_RGB" H 5850 2850 50  0001 C CNN
-F 3 "~" H 5850 2850 50  0001 C CNN
-	1    5850 2900
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R_US R4
 U 1 1 60308CC4
@@ -260,9 +249,39 @@ NoConn ~ 4650 4850
 Wire Wire Line
 	6050 3100 6350 3100
 Wire Wire Line
-	9100 3750 8850 3750
-Wire Wire Line
 	9500 3750 9600 3750
 Wire Wire Line
 	9600 3750 9600 3950
+NoConn ~ 7850 2850
+NoConn ~ 7850 2750
+NoConn ~ 7850 2650
+NoConn ~ 7850 2550
+NoConn ~ 7850 2450
+NoConn ~ 7850 2350
+NoConn ~ 8850 3650
+NoConn ~ 8850 3450
+NoConn ~ 8850 3350
+NoConn ~ 8850 3250
+NoConn ~ 8850 3150
+NoConn ~ 8850 3050
+NoConn ~ 8850 2950
+NoConn ~ 8850 2750
+NoConn ~ 8850 2550
+NoConn ~ 8850 2350
+NoConn ~ 8550 1950
+NoConn ~ 8450 1950
+NoConn ~ 8250 1950
+Wire Wire Line
+	8850 3750 9100 3750
+$Comp
+L Device:LED_RCBG D1
+U 1 1 60414663
+P 5850 2900
+F 0 "D1" H 5850 3397 50  0000 C CNN
+F 1 "LED_RCBG" H 5850 3306 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm-4_RGB" H 5850 2850 50  0001 C CNN
+F 3 "~" H 5850 2850 50  0001 C CNN
+	1    5850 2900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
